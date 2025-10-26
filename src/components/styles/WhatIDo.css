@@ -53,21 +53,6 @@
   animation: slideInLeft 0.8s ease-out 0.2s both;
 }
 
-.i-h2 {
-  color: #E6C3FF;
-  font-weight: 700;
-  transition: all 0.3s ease;
-  animation: slideInRight 0.8s ease-out 0.4s both;
-  margin-right: 10px;
-}
-
-.do-h2 {
-  color: #E6C3FF;
-  font-weight: 700;
-  transition: all 0.3s ease;
-  animation: slideInRight 0.8s ease-out 0.6s both;
-}
-
 @keyframes slideInLeft {
   from {
     opacity: 0;
@@ -94,11 +79,7 @@
   opacity: 1;
   transform: translateX(-5px) scale(1.02);
 }
-.what-box h2:hover .i-h2,
-.what-box h2:hover .do-h2 {
-  transform: translateX(5px) scale(1.02);
-  text-shadow: 0 0 20px #E6C3FF;
-}
+
 .what-box-in {
   flex-direction: column;
   height: 480px;
@@ -468,9 +449,3 @@
   }
 }
 
-/* === Fix color priority for I DO === */
-.title .i-h2,
-.title .do-h2 {
-  color: #E6C3FF !important;
-  text-shadow: 0 0 25px rgba(230, 195, 255, 0.6);
-}
