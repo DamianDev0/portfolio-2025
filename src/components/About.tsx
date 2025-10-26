@@ -18,10 +18,11 @@ const About = () => {
           minFontSize={36}
         />
         <p className="para">
-          I&apos;m a multidisciplinary developer passionate about crafting
-          immersive digital experiences through code and design. I focus on
-          modern technologies, performance, and user-centered interfaces to turn
-          complex ideas into simple, elegant, and meaningful products.
+          I&apos;m a highly accomplished and visionary full stack developer with a
+          proven record of leading high-impact software solutions for complex
+          business needs. I specialize in domain-driven design, clean
+          architecture, and scalable cloud-native systems that transform
+          cross-functional strategies into resilient, user-centered products.
         </p>
       </div>
     </div>

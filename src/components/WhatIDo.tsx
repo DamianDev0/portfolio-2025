@@ -94,25 +94,27 @@ const WhatIDo = () => {
             <div className="what-corner"></div>
 
             <div className="what-content-in">
-              <h3>FRONTEND & MOBILE</h3>
+              <h3>SOFTWARE &amp; MOBILE DEVELOPMENT</h3>
               <h4>Description</h4>
               <p>
-                Started building websites with JavaScript and PHP, now I craft
-                them with TypeScript, React, Express, Node, and a little bit of
-                magic!
+                I design, build, and launch high-impact mobile and web products
+                with React Native, React, and TypeScript, pairing intuitive UX
+                with robust backend services. From feature ideation to
+                production deployment, I rely on SOLID principles and automated
+                pipelines to keep releases reliable and scalable.
               </p>
-              <h5>Skillset & tools</h5>
+              <h5>Skillset &amp; tools</h5>
               <div className="what-content-flex">
-                <div className="what-tags">JavaScript</div>
                 <div className="what-tags">TypeScript</div>
-                <div className="what-tags">Three.js</div>
+                <div className="what-tags">React Native</div>
                 <div className="what-tags">React</div>
-                <div className="what-tags">CSS</div>
-                <div className="what-tags">Node.js</div>
                 <div className="what-tags">Next.js</div>
-                <div className="what-tags">Express.js</div>
-                <div className="what-tags">PHP</div>
-                <div className="what-tags">MySQL</div>
+                <div className="what-tags">Node.js</div>
+                <div className="what-tags">NestJS</div>
+                <div className="what-tags">Expo</div>
+                <div className="what-tags">PostgreSQL</div>
+                <div className="what-tags">MongoDB</div>
+                <div className="what-tags">SQL</div>
               </div>
               <div className="what-arrow"></div>
             </div>
@@ -138,22 +140,27 @@ const WhatIDo = () => {
             </div>
             <div className="what-corner"></div>
             <div className="what-content-in">
-              <h3>DESIGN</h3>
+              <h3>ARCHITECTURE &amp; DELIVERY</h3>
               <h4>Description</h4>
               <p>
-                I started designing as my hobby, but like all good hobbies, it
-                slowly crept into my career — now it won’t leave me alone!
+                I partner with cross-functional teams to shape resilient
+                systems, translating business goals into well-structured
+                services and design systems. Domain-driven design, atomic design
+                principles, and data-driven experimentation help me ship
+                experiences that scale with confidence.
               </p>
-              <h5>Skillset & tools</h5>
+              <h5>Skillset &amp; tools</h5>
               <div className="what-content-flex">
-                <div className="what-tags">Blender</div>
-                <div className="what-tags">ZBrush</div>
-                <div className="what-tags">UI Design</div>
-                <div className="what-tags">Motion</div>
-                <div className="what-tags">Rigging</div>
-                <div className="what-tags">3D Animation</div>
-                <div className="what-tags">Character Design</div>
-                <div className="what-tags">Modeling</div>
+                <div className="what-tags">Domain-Driven Design</div>
+                <div className="what-tags">Clean Architecture</div>
+                <div className="what-tags">Microservices</div>
+                <div className="what-tags">Event-Driven</div>
+                <div className="what-tags">Azure</div>
+                <div className="what-tags">Google Cloud</div>
+                <div className="what-tags">Stripe</div>
+                <div className="what-tags">Redux</div>
+                <div className="what-tags">Atomic Design</div>
+                <div className="what-tags">Git</div>
               </div>
               <div className="what-arrow"></div>
             </div>
