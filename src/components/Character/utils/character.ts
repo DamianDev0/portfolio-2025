@@ -72,7 +72,7 @@ const setCharacter = (
                       break;
                     default:
                       mesh.material = new THREE.MeshStandardMaterial({
-                        color: "#f2c7a5",
+                        color: "#c58a73",
                         roughness: 0.45,
                         metalness: 0.05,
                       });
@@ -82,6 +82,7 @@ const setCharacter = (
                     color: "#0a0a0a",
                     roughness: 0.35,
                     metalness: 0.1,
+                    
                   });
                 } else if (parentName === "Keyboard" && name.includes("keys")) {
                   const blackKeyIds = [

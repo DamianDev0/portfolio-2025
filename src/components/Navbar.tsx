@@ -13,7 +13,7 @@ const Navbar = () => {
     smoother = createSmoothScroller();
 
     smoother.scrollTop(0);
-    smoother.paused(true);
+    smoother.paused(false);
 
     const links = document.querySelectorAll(".header ul a");
     for (const elem of links) {

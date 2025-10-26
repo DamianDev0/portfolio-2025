@@ -61,13 +61,12 @@ const Loading = ({ percent }: { percent: number }) => {
       </div>
       <div className="loading-screen">
         <div className="loading-marquee">
-      <Marquee>
-  <span>Software Developer</span>
-  <span>Mobile Developer</span>
-  <span>Frontend Developer</span>
-  <span>Backend Developer</span>
-
-</Marquee>
+          <Marquee>
+            <span>Software Developer</span>
+            <span>Mobile Developer</span>
+            <span>Backend Developer</span>
+            <span>Clean Architecture Advocate</span>
+          </Marquee>
         </div>
         <div
           className={`loading-wrap ${clicked && "loading-clicked"}`}

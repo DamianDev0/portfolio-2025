@@ -16,8 +16,8 @@ const Contact = () => {
             </p>
             <h4>Phone</h4>
             <p>
-              <a href="tel:+9199999999" data-cursor="disable">
-                +57 300 455 6577
+              <a href="tel:+573004555657" data-cursor="disable">
+                +57 300 455 5657
               </a>
             </p>
           </div>

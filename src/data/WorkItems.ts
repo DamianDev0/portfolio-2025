@@ -1,4 +1,3 @@
-
 export interface WorkItem {
   title: string;
   category: string;
@@ -15,27 +14,29 @@ export const WORK_ITEMS: WorkItem[] = [
     image: "/projects/charge.png",
   },
   {
-    title: "Creative Studio Site",
+    title: "Locksmith Website",
     category: "Web Design",
-    tools: "React · GSAP · Headless CMS",
+    tools: "NextJS · NestJS · Tailwind CSS · TypeScript",
     image: "/projects/locksmith.png",
   },
   {
-    title: "Immersive Product Tour",
-    category: "Interactive Experience",
-    tools: "Three.js · React · Motion",
+    title: "Rhythm ",
+    category: "Mobile App",
+    tools:
+      "Three.js · React Native · CI/CD · Expo · TypeScript · Redux · NestJS",
     image: "/projects/rythym.png",
   },
   {
-    title: "SaaS Analytics Dashboard",
-    category: "Product Design",
-    tools: "Next.js · Radix UI · Recharts",
+    title: "SmartCart",
+    category: "Mobile App",
+    tools:
+      "Three.js · React Native · CI/CD · Expo · TypeScript · Redux · NestJS",
     image: "/projects/smart.png",
   },
   {
-    title: "Portfolio Generator",
-    category: "Side Project",
-    tools: "TypeScript · Tailwind CSS · Vite",
+    title: "Wallet",
+    category: "Mobile App",
+    tools: "TypeScript · React Native · Redux · Git",
     image: "/projects/wallet.png",
   },
 ];
