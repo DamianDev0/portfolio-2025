@@ -9,20 +9,21 @@ const WhatIDo = () => {
   };
 
   useEffect(() => {
+    const currentContainers = containerRef.current;
     if (ScrollTrigger.isTouch) {
-      containerRef.current.forEach((container) => {
+      for (const container of currentContainers) {
         if (container) {
           container.classList.remove("what-noTouch");
           container.addEventListener("click", () => handleClick(container));
         }
-      });
+      }
     }
     return () => {
-      containerRef.current.forEach((container) => {
+      for (const container of currentContainers) {
         if (container) {
           container.removeEventListener("click", () => handleClick(container));
         }
-      });
+      }
     };
   }, []);
 
@@ -97,11 +98,8 @@ const WhatIDo = () => {
               <h3>SOFTWARE &amp; MOBILE DEVELOPMENT</h3>
               <h4>Description</h4>
               <p>
-                I design, build, and launch high-impact mobile and web products
-                with React Native, React, and TypeScript, pairing intuitive UX
-                with robust backend services. From feature ideation to
-                production deployment, I rely on SOLID principles and automated
-                pipelines to keep releases reliable and scalable.
+                I build full-stack mobile and web applications using modern technologies. 
+                From concept to deployment with clean code and scalable architecture.
               </p>
               <h5>Skillset &amp; tools</h5>
               <div className="what-content-flex">
@@ -113,7 +111,7 @@ const WhatIDo = () => {
                 <div className="what-tags">NestJS</div>
                 <div className="what-tags">Expo</div>
                 <div className="what-tags">PostgreSQL</div>
-                <div className="what-tags">MongoDB</div>
+         
                 <div className="what-tags">SQL</div>
               </div>
               <div className="what-arrow"></div>
@@ -143,11 +141,8 @@ const WhatIDo = () => {
               <h3>ARCHITECTURE &amp; DELIVERY</h3>
               <h4>Description</h4>
               <p>
-                I partner with cross-functional teams to shape resilient
-                systems, translating business goals into well-structured
-                services and design systems. Domain-driven design, atomic design
-                principles, and data-driven experimentation help me ship
-                experiences that scale with confidence.
+                I design scalable systems and lead development teams to deliver 
+                robust solutions using clean architecture and modern practices.
               </p>
               <h5>Skillset &amp; tools</h5>
               <div className="what-content-flex">
@@ -178,11 +173,11 @@ function handleClick(container: HTMLDivElement) {
   container.classList.remove("what-sibling");
   if (container.parentElement) {
     const siblings = Array.from(container.parentElement.children);
-    siblings.forEach((sibling) => {
+    for (const sibling of siblings) {
       if (sibling !== container) {
         sibling.classList.remove("what-content-active");
         sibling.classList.toggle("what-sibling");
       }
-    });
+    }
   }
 }

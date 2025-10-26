@@ -6,7 +6,7 @@ const About = () => {
     <div className="about-section" id="about">
       <div className="about-me">
         <TextPressure
-          text="aboutme"
+          text="About Me"
           flex={true}
           alpha={false}
           stroke={false}
@@ -17,11 +17,11 @@ const About = () => {
           strokeColor="#000"
           minFontSize={36}
         />
-        <p className="para">
-          I&apos;m a highly accomplished and visionary full stack developer with a
-          proven record of leading high-impact software solutions for complex
-          business needs. I specialize in domain-driven design, clean
-          architecture, and scalable cloud-native systems that transform
+        <p>
+          I'm a highly accomplished and visionary full stack developer with a{" "}
+          proven record of leading high-impact software solutions for complex{" "}
+          business needs. I specialize in domain-driven design, clean{" "}
+          architecture, and scalable cloud-native systems that transform{" "}
           cross-functional strategies into resilient, user-centered products.
         </p>
       </div>

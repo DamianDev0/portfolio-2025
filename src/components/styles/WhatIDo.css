@@ -118,14 +118,14 @@
 
 .what-noTouch:hover,
 .what-content-active {
-  min-height: 65%;
+  min-height: 80%;
   padding: 30px 35px;
 }
 
 .what-noTouch:hover ~ .what-content,
 .what-box-in:hover .what-noTouch:not(:hover),
 .what-content.what-sibling {
-  min-height: 32%;
+  min-height: 25%;
   padding: 12px 35px;
 }
 
@@ -378,13 +378,13 @@
   }
   .what-noTouch:hover,
   .what-content-active {
-    min-height: 65%;
+    min-height: 75%;
     padding: 30px 35px;
   }
   .what-noTouch:hover ~ .what-content,
   .what-box-in:hover .what-noTouch:not(:hover),
   .what-content.what-sibling {
-    min-height: 32%;
+    min-height: 25%;
     padding: 12px 35px;
   }
 }
