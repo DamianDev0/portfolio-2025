@@ -6,11 +6,12 @@ const About = () => {
       <div className="about-me">
         <h2 className="title">About Me</h2>
         <p>
-          I'm a highly accomplished and visionary full stack developer with a{" "}
-          proven record of leading high-impact software solutions for complex{" "}
-          business needs. I specialize in domain-driven design, clean{" "}
-          architecture, and scalable cloud-native systems that transform{" "}
-          cross-functional strategies into resilient, user-centered products.
+          Full-stack and mobile developer with a proven track record of leading{" "}
+          high-impact software projects. I focus on architectural excellence,{" "}
+          rigorously applying Clean Architecture, SOLID principles, and{" "}
+          Domain-Driven Design. Expert in the JavaScript ecosystem — React,{" "}
+          NestJS, Node.js, TypeScript, and React Native — delivering scalable{" "}
+          solutions that exceed business objectives.
         </p>
       </div>
     </div>

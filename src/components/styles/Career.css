@@ -162,7 +162,11 @@
   .career-info-box {
     flex-direction: column;
     gap: 10px;
-    margin-bottom: 70px;
+    margin-bottom: 40px;
+  }
+  .career-info-box p {
+    font-size: 13px;
+    line-height: 1.5;
   }
   .career-info-in,
   .career-info-box p {
@@ -175,6 +179,9 @@
   }
   .career-container {
     width: calc(100% - 25px);
+  }
+  .career-section h2 {
+    margin-bottom: 50px;
   }
 }
 @media only screen and (max-width: 600px) {
