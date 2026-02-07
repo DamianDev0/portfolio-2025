@@ -26,12 +26,11 @@ export const handleTouchEnd = (
     interpolationY: number
   ) => void
 ) => {
+  // Gentle return: slow lerp back to center, then restore normal speed
+  setMousePosition(0, 0, 0.02, 0.02);
   setTimeout(() => {
-    setMousePosition(0, 0, 0.03, 0.03);
-    setTimeout(() => {
-      setMousePosition(0, 0, 0.1, 0.2);
-    }, 1000);
-  }, 2000);
+    setMousePosition(0, 0, 0.1, 0.2);
+  }, 800);
 };
 
 export const handleHeadRotation = (
@@ -43,7 +42,8 @@ export const handleHeadRotation = (
   lerp: (x: number, y: number, t: number) => number
 ) => {
   if (!headBone) return;
-  if (window.scrollY < 200) {
+  const scrollThreshold = window.innerWidth > 1024 ? 200 : window.innerHeight * 0.6;
+  if (window.scrollY < scrollThreshold) {
     const maxRotation = Math.PI / 6;
     headBone.rotation.y = lerp(
       headBone.rotation.y,

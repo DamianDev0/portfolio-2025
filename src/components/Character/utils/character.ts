@@ -71,18 +71,23 @@ const setCharacter = (
                     case "eyes001":
                       break;
                     default:
-                      mesh.material = new THREE.MeshStandardMaterial({
+                      mesh.material = new THREE.MeshPhysicalMaterial({
                         color: "#c58a73",
-                        roughness: 0.45,
-                        metalness: 0.05,
+                        roughness: 0.4,
+                        metalness: 0.02,
+                        sheen: 0.3,
+                        sheenRoughness: 0.5,
+                        sheenColor: new THREE.Color("#e8a090"),
                       });
                   }
                 } else if (parentName === "spine006" && name === "hair") {
-                  mesh.material = new THREE.MeshStandardMaterial({
+                  mesh.material = new THREE.MeshPhysicalMaterial({
                     color: "#0a0a0a",
-                    roughness: 0.35,
-                    metalness: 0.1,
-                    
+                    roughness: 0.3,
+                    metalness: 0.15,
+                    sheen: 1.0,
+                    sheenRoughness: 0.3,
+                    sheenColor: new THREE.Color("#2a1a3a"),
                   });
                 } else if (parentName === "Keyboard" && name.includes("keys")) {
                   const blackKeyIds = [

@@ -1,25 +1,11 @@
 import { careerData } from "../data/Career";
 import "./styles/Career.css";
-import TextPressure from "./TextPressure";
 
 const Career = () => {
   return (
     <section className="career-section section-container">
       <div className="career-container">
-        <div className="career-title-container">
-          <TextPressure
-            text="My career & experience"
-            flex={true}
-            alpha={false}
-            stroke={false}
-            width={true}
-            weight={true}
-            italic={true}
-            textColor="#E6C3FF"
-            strokeColor="#000"
-            minFontSize={36}
-          />
-        </div>
+        <h2 className="title">My career & experience</h2>
 
         <div className="career-info">
           <div className="career-timeline">

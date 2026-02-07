@@ -18,13 +18,15 @@
   text-align: left;
 }
 
-.about-me h3 {
-  font-size: 20px;
+.about-me h2 {
+  font-size: calc(4vw + 25px);
+  line-height: calc(4vw + 20px);
+  font-weight: 600;
+  font-style: italic;
   text-transform: uppercase;
-  letter-spacing: 5px;
-  font-weight: 400;
-  color: var(--accentColor);
-  margin-bottom: 30px;
+  letter-spacing: 2px;
+  color: #fff;
+  margin-bottom: 20px;
 }
 
 .about-me p {

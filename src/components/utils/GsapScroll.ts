@@ -121,14 +121,40 @@ export function setCharTimeline(
     }
   } else {
     if (character) {
+      // Mobile: smooth character fade-out & parallax on scroll
+      tl1
+        .to(
+          ".character-model",
+          { y: "-15%", opacity: 0, duration: 1, ease: "none" },
+          0
+        )
+        .to(
+          ".character-rim",
+          { opacity: 0, scale: 0.6, duration: 0.8 },
+          0
+        )
+        .to(
+          ".landing-container",
+          { opacity: 0, y: "15%", duration: 0.6 },
+          0
+        );
+
+      // Smooth reveal for what-box-in
       const tM2 = gsap.timeline({
         scrollTrigger: {
           trigger: ".what-box-in",
-          start: "top 70%",
-          end: "bottom top",
+          start: "top 80%",
+          end: "top 50%",
+          scrub: true,
         },
       });
-      tM2.to(".what-box-in", { display: "flex", duration: 0.1, delay: 0 }, 0);
+      tM2
+        .fromTo(
+          ".what-box-in",
+          { display: "none", opacity: 0 },
+          { display: "flex", opacity: 1, duration: 1 },
+          0
+        );
     }
   }
 }

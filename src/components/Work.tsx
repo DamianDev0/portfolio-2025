@@ -3,7 +3,6 @@ import WorkImage from "./WorkImage";
 import { useGSAP } from "@gsap/react";
 import { initWorkAnimation } from "../animations/workAnimation";
 import { WORK_ITEMS } from "../data/WorkItems";
-import TextPressure from "./TextPressure";
 
 const Work = () => {
   useGSAP(() => {
@@ -14,20 +13,7 @@ const Work = () => {
   return (
     <section className="work-section" id="work">
       <div className="work-container section-container">
-        <div className="work-title-container">
-          <TextPressure
-            text="MYWORK"
-            flex={true}
-            alpha={true}
-            stroke={false}
-            width={true}
-            weight={true}
-            italic={true}
-            textColor="#E6C3FF"
-            strokeColor="#000"
-            minFontSize={36}
-          />
-        </div>
+        <h2 className="title">MY WORK</h2>
 
         <div className="work-flex">
           {WORK_ITEMS.map((item, index) => (
@@ -41,6 +27,7 @@ const Work = () => {
                     <p>{item.category}</p>
                   </div>
                 </div>
+                <p className="work-description">{item.description}</p>
                 <h4>Tools and features</h4>
                 <p>{item.tools}</p>
               </div>

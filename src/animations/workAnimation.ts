@@ -10,13 +10,11 @@ export const initWorkAnimation = () => {
 
   if (!boxes.length || !container || !section) return;
 
-  const rectLeft = container.getBoundingClientRect().left;
+  const flex = boxes[0].parentElement!;
   const boxWidth = boxes[0].getBoundingClientRect().width;
-  const parentWidth = boxes[0].parentElement!.getBoundingClientRect().width;
-  const padding =
-    parseInt(window.getComputedStyle(boxes[0]).padding || "0", 10) / 2;
-
-  const translateX = boxWidth * boxes.length - (rectLeft + parentWidth) + padding;
+  const lastBoxEnd = flex.getBoundingClientRect().left + boxWidth * boxes.length;
+  const containerEnd = container.getBoundingClientRect().right;
+  const translateX = lastBoxEnd - containerEnd + 100;
 
   const timeline = gsap.timeline({
     scrollTrigger: {

@@ -1,22 +1,10 @@
 import "./styles/About.css";
-import TextPressure from "./TextPressure";
 
 const About = () => {
   return (
     <div className="about-section" id="about">
       <div className="about-me">
-        <TextPressure
-          text="About Me"
-          flex={true}
-          alpha={false}
-          stroke={false}
-          width={true}
-          weight={true}
-          italic={true}
-          textColor="#E6C3FF"
-          strokeColor="#000"
-          minFontSize={36}
-        />
+        <h2 className="title">About Me</h2>
         <p>
           I'm a highly accomplished and visionary full stack developer with a{" "}
           proven record of leading high-impact software solutions for complex{" "}
