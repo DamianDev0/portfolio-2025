@@ -4,8 +4,6 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 gsap.registerPlugin(ScrollTrigger);
 
 export const initWorkAnimation = () => {
-  if (window.innerWidth <= 900) return;
-
   const boxes = document.querySelectorAll<HTMLElement>(".work-box");
   const container = document.querySelector<HTMLElement>(".work-container");
   const section = document.querySelector<HTMLElement>(".work-section");

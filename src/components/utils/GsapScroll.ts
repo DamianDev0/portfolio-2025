@@ -125,7 +125,7 @@ export function setCharTimeline(
       tl1
         .to(
           ".character-model",
-          { y: "-15%", opacity: 0, duration: 1, ease: "none" },
+          { y: "-15%", opacity: 0, pointerEvents: "none", duration: 1, ease: "none" },
           0
         )
         .to(
