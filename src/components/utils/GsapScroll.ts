@@ -140,9 +140,10 @@ export function setCharTimeline(
         );
 
       // Smooth reveal for what-box-in
+      // Use .whatIDO as trigger (stable in layout) instead of .what-box-in itself
       const tM2 = gsap.timeline({
         scrollTrigger: {
-          trigger: ".what-box-in",
+          trigger: ".whatIDO",
           start: "top 80%",
           end: "top 50%",
           scrub: true,
@@ -151,8 +152,8 @@ export function setCharTimeline(
       tM2
         .fromTo(
           ".what-box-in",
-          { display: "none", opacity: 0 },
-          { display: "flex", opacity: 1, duration: 1 },
+          { opacity: 0, visibility: "hidden" },
+          { opacity: 1, visibility: "visible", duration: 1 },
           0
         );
     }
