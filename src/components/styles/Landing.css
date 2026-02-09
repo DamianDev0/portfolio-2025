@@ -24,6 +24,7 @@
   filter: blur(60px);
   border-radius: 50%;
   animation: loadingCircle 5s linear infinite;
+  will-change: transform;
 }
 .nav-fade {
   position: fixed;
@@ -63,6 +64,7 @@
   filter: blur(50px);
   border-radius: 50%;
   animation: loadingCircle2 5s linear infinite;
+  will-change: transform;
 }
 @keyframes loadingCircle2 {
   100% {
@@ -245,6 +247,25 @@ h2.landing-info-h2 {
   );
   top: 0;
   left: 0;
+}
+@media screen and (max-width: 768px) {
+  .landing-circle1 {
+    width: 200px;
+    height: 200px;
+    filter: blur(40px);
+    box-shadow: none;
+  }
+  .landing-circle2 {
+    width: 200px;
+    height: 200px;
+    filter: blur(35px);
+    box-shadow: none;
+  }
+  .character-rim {
+    filter: blur(35px);
+    width: 280px;
+    height: 280px;
+  }
 }
 @media screen and (min-width: 500px) {
   .landing-circle2 {

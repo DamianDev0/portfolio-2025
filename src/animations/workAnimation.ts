@@ -10,6 +10,7 @@ export const initWorkAnimation = () => {
 
   if (!boxes.length || !container || !section) return;
 
+  const isMobile = window.innerWidth <= 1024;
   const flex = boxes[0].parentElement!;
   const boxWidth = boxes[0].getBoundingClientRect().width;
   const lastBoxEnd = flex.getBoundingClientRect().left + boxWidth * boxes.length;
@@ -21,7 +22,7 @@ export const initWorkAnimation = () => {
       trigger: section,
       start: "top top",
       end: `+=${translateX}`,
-      scrub: true,
+      scrub: isMobile ? 0.6 : true,
       pin: true,
       id: "work",
     },

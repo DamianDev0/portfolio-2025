@@ -7,9 +7,6 @@ export function setCharTimeline(
   camera: THREE.PerspectiveCamera
 ) {
   let intensity: number = 0;
-  setInterval(() => {
-    intensity = Math.random();
-  }, 200);
   const tl1 = gsap.timeline({
     scrollTrigger: {
       trigger: ".landing-section",
@@ -63,6 +60,9 @@ export function setCharTimeline(
   });
   const neckBone = character?.getObjectByName("spine005");
   if (window.innerWidth > 1024) {
+    setInterval(() => {
+      intensity = Math.random();
+    }, 200);
     if (character) {
       tl1
         .fromTo(character.rotation, { y: 0 }, { y: 0.7, duration: 1 }, 0)

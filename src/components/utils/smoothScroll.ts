@@ -15,12 +15,13 @@ export interface SmoothScroller {
 let lenis: Lenis | null = null;
 
 export const createSmoothScroller = (): SmoothScroller => {
-  // Initialize Lenis with better settings for horizontal scroll compatibility
+  const isMobile = window.innerWidth <= 1024;
+
   lenis = new Lenis({
-    duration: 1.2,
+    duration: isMobile ? 0.6 : 1.2,
     easing: (t: number) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
     wheelMultiplier: 1,
-    touchMultiplier: 2,
+    touchMultiplier: isMobile ? 1.5 : 2,
   });
 
   // Connect Lenis with GSAP ScrollTrigger
