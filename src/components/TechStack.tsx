@@ -26,7 +26,7 @@ const imageUrls = [
 const textures = imageUrls.map((url) => textureLoader.load(url));
 
 const isMobile = window.innerWidth <= 1024;
-const sphereGeometry = new THREE.SphereGeometry(1, isMobile ? 16 : 28, isMobile ? 16 : 28);
+const sphereGeometry = new THREE.SphereGeometry(1, isMobile ? 28 : 28, isMobile ? 16 : 28);
 
 const sphereCount = isMobile ? 15 : 30;
 const spheres = [...Array(sphereCount)].map(() => ({
