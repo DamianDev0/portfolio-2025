@@ -21,7 +21,7 @@ export const WORK_ITEMS: WorkItem[] = [
     title: "Payroll",
     category: "Enterprise Platform",
     description:
-      "Complete payroll module built end-to-end as senior fullstack. The backend runs on C# and .NET handling salary calculations, tax rules and payment scheduling, while the Next.js frontend gives HR a clean flow for managing employees and running payrolls.",
+      "Complete payroll module built end-to-end as senior fullstack on a multi-tenant architecture — isolated data per CPA client. The backend runs on C# and .NET handling salary calculations, tax rules and payment scheduling, while the Next.js frontend gives HR a clean flow for managing employees and running payrolls.",
     tools: "C# · .NET · Next.js · PostgreSQL · TypeScript",
     image: "/projects/payroll.png",
   },
@@ -29,7 +29,7 @@ export const WORK_ITEMS: WorkItem[] = [
     title: "Form-Helper",
     category: "AI SaaS",
     description:
-      "Platform that helps immigrants complete US official paperwork faster. AI pre-fills and validates documents, reducing hours of manual work to minutes. Built as a Turborepo monorepo with shared packages for UI, validation and domain logic.",
+      "Multi-tenant SaaS that helps immigrants complete US official paperwork faster. AI pre-fills and validates documents, reducing hours of manual work to minutes. Built as a Turborepo monorepo with shared packages for UI, validation and domain logic.",
     tools: "Next.js · NestJS · Turborepo · TypeScript · AI · PostgreSQL",
     image: "/projects/form-helper.png",
   },

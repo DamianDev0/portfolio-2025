@@ -11,14 +11,14 @@ export const careerData = [
     company: "Payroll",
     year: "2026",
     description:
-      "Owned a full payroll module end-to-end as the senior on the project. Designed and built the backend with C# and .NET — salary calculations, tax rules, payment scheduling — and shipped the Next.js frontend HR uses every day to run payrolls.",
+      "Owned a full payroll module end-to-end as the senior on the project. Designed and built the backend with C# and .NET on a multi-tenant architecture so each CPA client has isolated data, salary calculations, tax rules and payment scheduling — and shipped the Next.js frontend HR uses every day to run payrolls.",
   },
   {
     title: "Fullstack Developer",
     company: "Form-Helper",
     year: "2026",
     description:
-      "Building a platform that helps immigrants complete US paperwork way faster using AI to pre-fill and validate official documents. Architected as a Turborepo monorepo with shared packages, NestJS on the back and Next.js on the front.",
+      "Building a multi-tenant SaaS that helps immigrants complete US paperwork way faster using AI to pre-fill and validate official documents. Architected as a Turborepo monorepo with shared packages, NestJS on the back and Next.js on the front.",
   },
   {
     title: "Backend Developer",
