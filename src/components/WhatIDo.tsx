@@ -99,8 +99,9 @@ const WhatIDo = () => {
               <h3>SOFTWARE &amp; MOBILE DEVELOPMENT</h3>
               <h4>Description</h4>
               <p>
-                I build full-stack mobile and web applications using modern technologies. 
-                From concept to deployment with clean code and scalable architecture.
+                I build full-stack web and mobile apps from idea to production.
+                Backends in NestJS or .NET, frontends in React or Next.js, and
+                mobile in React Native. Clean code, honest tests, shipped on time.
               </p>
               <h5>Skillset &amp; tools</h5>
               <div className="what-content-flex">
@@ -110,9 +111,10 @@ const WhatIDo = () => {
                 <div className="what-tags">Next.js</div>
                 <div className="what-tags">Node.js</div>
                 <div className="what-tags">NestJS</div>
+                <div className="what-tags">C#</div>
+                <div className="what-tags">.NET</div>
                 <div className="what-tags">Expo</div>
                 <div className="what-tags">PostgreSQL</div>
-         
                 <div className="what-tags">SQL</div>
               </div>
               <div className="what-arrow"></div>
@@ -142,8 +144,9 @@ const WhatIDo = () => {
               <h3>ARCHITECTURE &amp; DELIVERY</h3>
               <h4>Description</h4>
               <p>
-                I design scalable systems and lead development teams to deliver 
-                robust solutions using clean architecture and modern practices.
+                I design scalable systems and lead teams through the messy middle
+                of a project. Clean Architecture, DDD, microservices — whatever
+                it takes to ship something that still works a year later.
               </p>
               <h5>Skillset &amp; tools</h5>
               <div className="what-content-flex">

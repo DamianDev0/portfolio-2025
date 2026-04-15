@@ -22,6 +22,7 @@ const imageUrls = [
   "/images/javascript.webp",
   "/images/react.webp",
   "/images/nest-js.webp",
+  "/images/net.webp",
 ];
 const textures = imageUrls.map((url) => textureLoader.load(url));
 

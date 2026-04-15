@@ -140,9 +140,19 @@
   max-width: 100%;
   max-height: 420px;
 }
+.work-image img[src$="payroll.png"],
+.work-image img[src$="form-helper.png"] {
+  width: 100%;
+  max-height: 520px;
+  object-fit: contain;
+}
 @media only screen and (max-height: 900px) {
   .work-image img {
     max-height: 300px;
+  }
+  .work-image img[src$="payroll.png"],
+  .work-image img[src$="form-helper.png"] {
+    max-height: 380px;
   }
   .work-box {
     padding-top: 40px;
@@ -186,6 +196,10 @@
 @media only screen and (max-height: 650px) {
   .work-image img {
     max-height: 200px;
+  }
+  .work-image img[src$="payroll.png"],
+  .work-image img[src$="form-helper.png"] {
+    max-height: 260px;
   }
   .work-section h2 {
     margin-bottom: 15px;
@@ -234,6 +248,10 @@
   .work-image img {
     max-height: 240px;
   }
+  .work-image img[src$="payroll.png"],
+  .work-image img[src$="form-helper.png"] {
+    max-height: 320px;
+  }
 }
 
 @media only screen and (max-width: 500px) {
@@ -248,5 +266,9 @@
   }
   .work-image img {
     max-height: 200px;
+  }
+  .work-image img[src$="payroll.png"],
+  .work-image img[src$="form-helper.png"] {
+    max-height: 280px;
   }
 }
